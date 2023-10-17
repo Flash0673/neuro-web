@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
+import Logo from '../../assets/images/Logo.png';
+import User from '../../assets/images/User.png';
 import {
   Nav,
   NavbarContainer,
@@ -9,18 +11,21 @@ import {
   NavLinks,
   MobileIcon,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
+  LogoImg,
+  UserImg
 } from './NavbarElements'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to='/'>
+            <LogoImg src={Logo}/>
             NeuroWeb
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -41,7 +46,7 @@ const Navbar = () => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+            <NavBtnLink to='/signin'><UserImg src={User}/></NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
