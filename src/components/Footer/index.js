@@ -6,8 +6,15 @@ import {
     FooterLinksWrapper,
     FooterLinkItems,
     FooterLinkTitle,
-    FooterLink
-    } from './FooterElements';
+    FooterLink,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialLogo,
+    WebsiteRights,
+    SocialIcons,
+    SocialIconLink
+} from './FooterElements';
+import { FaFacebook, FaGit, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -31,10 +38,8 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle>About Us</FooterLinkTitle>
                             <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">How it works</
-                            FooterLink>
-                            <FooterLink to="/signin">Testimonials</
-                            FooterLink>
+                            <FooterLink to="/signin">How it works</FooterLink>
+                            <FooterLink to="/signin">Testimonials</FooterLink>
                             <FooterLink to="/signin">Careers</FooterLink>
                             <FooterLink to="/signin">Investors</FooterLink>
                             <FooterLink to="/signin">Term of Service</FooterLink>
@@ -44,16 +49,36 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle>About Us</FooterLinkTitle>
                             <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">How it works</
-                            FooterLink>
-                            <FooterLink to="/signin">Testimonials</
-                            FooterLink>
+                            <FooterLink to="/signin">How it works</FooterLink>
+                            <FooterLink to="/signin">Testimonials</FooterLink>
                             <FooterLink to="/signin">Careers</FooterLink>
                             <FooterLink to="/signin">Investors</FooterLink>
                             <FooterLink to="/signin">Term of Service</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
+                <SocialMedia>
+                    <SocialMediaWrap>
+                        <SocialLogo to='/'>
+                            NeuroWeb
+                        </SocialLogo>
+                        <WebsiteRights>
+                            NeuroWeb {new Date().getFullYear()}
+                            <> </>All rights reserved
+                        </WebsiteRights>
+                        <SocialIcons>
+                            <SocialIconLink href='/' target='_blank' arial-label='Facebook'>
+                                <FaFacebook />
+                            </SocialIconLink>
+                            <SocialIconLink href='/' target='_blank' arial-label='GitHub'>
+                                <FaGit />
+                            </SocialIconLink>
+                            <SocialIconLink href='/' target='_blank' arial-label='YouTube'>
+                                <FaYoutube />
+                            </SocialIconLink>
+                        </SocialIcons>
+                    </SocialMediaWrap>
+                </SocialMedia>
             </FooterWrap>
         </FooterContainer>
     )

@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Mainpage from './pages/Mainpage';
-import SignIn from './pages/signin';
+import MainPage from './pages/MainPage';
+import SigninPage from './pages/SigninPage';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<Mainpage/>} />
-          <Route index element={<SignIn/>} />
+          <Route index element={<MainPage/>} />
+          <Route path='/signin' element={<SigninPage/>} />
         </Routes>
       </BrowserRouter>
     </div>

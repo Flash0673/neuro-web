@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import Logo from '../../assets/images/Logo.png';
 import User from '../../assets/images/User.png';
@@ -16,13 +16,28 @@ import {
   UserImg
 } from './NavbarElements'
 
-const Navbar = ({toggle}) => {
+const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+
+// Продумать что делать при нажатии на лого, чтобы ехало вверх смотреть с 3:26:00
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to='/'>
-            <LogoImg src={Logo}/>
+            <LogoImg src={Logo} />
             NeuroWeb
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -46,7 +61,7 @@ const Navbar = ({toggle}) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/signin'><UserImg src={User}/></NavBtnLink>
+            <NavBtnLink to='/signin'><UserImg src={User} /></NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

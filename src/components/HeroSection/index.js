@@ -1,38 +1,40 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import { Button } from '../ButtonElements'
-import { HeroContainer,
+import {
+  HeroContainer,
   HeroBg,
   HeroContent,
   HeroH1,
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
-  ArrowRight } from './HeroElements'
+  ArrowRight
+} from './HeroElements'
 
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false)
-    const onHover = () => {
-      setHover(!hover)
-    }
-    
+  const onHover = () => {
+    setHover(!hover)
+  }
+
   return (
     <HeroContainer>
-        <HeroBg>
+      <HeroBg>
+        {/* TODO: Вставить картинку */}
+      </HeroBg>
+      <HeroContent>
+        <HeroH1>Раскройте потенциал искусственного интеллекта с помощью NeuroWeb</HeroH1>
+        <HeroP>
 
-        </HeroBg>
-        <HeroContent>
-          <HeroH1>Раскройте потенциал искусственного интеллекта с помощью NeuroWeb</HeroH1>
-          <HeroP>
-          
-          </HeroP>
-          <HeroBtnWrapper>
-            <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
-              Начать {hover ? <ArrowForward />: <ArrowRight
+        </HeroP>
+        <HeroBtnWrapper>
+          <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+            Начать {hover ? <ArrowForward /> : <ArrowRight
             />}
-            </Button>
-          </HeroBtnWrapper>
-        </ HeroContent>
+          </Button>
+        </HeroBtnWrapper>
+      </ HeroContent>
     </HeroContainer>
   )
 }
