@@ -7,6 +7,7 @@ import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
+import SliderSection from '../components/SliderSection';
 
 const MainPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ const MainPage = () => {
       <HeroSection />
       <InfoSection {...homeObjOne}/>
       <Services />
+      <SliderSection />
       <Footer />
     </div>
   )
