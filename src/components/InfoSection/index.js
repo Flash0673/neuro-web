@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button } from '../ButtonElements'
+import React, { useState } from 'react'
+import { Button2 } from '../ButtonElements'
 import { InfoContainer,
     InfoWrapper,
     InfoRow,
@@ -11,41 +11,54 @@ import { InfoContainer,
     Subtitle,
     BtnWrap,
     ImgWrap,
-    Img
+    Img,
+    ServicesCard,
+    ArrowForward,
+    ArrowRight
  } from './InfoElements';
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkText, description1, description2, buttonLabel, img, alt, primary, dark, dark2}) => {
+    const [hover, setHover] = useState(false)
+    const onHover = () => {
+        setHover(!hover)
+    }
+    
     return (
+
     <>
         <InfoContainer lightBg={lightBg} id={id}>
-            <InfoWrapper>
-                <InfoRow imgStart={imgStart}>
-                    <Column1>
-                        <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
-                            <Heading lightText={lightText}>{heading}</Heading>
-                            <Subtitle darkText={darkText}>{description}</Subtitle>
-                            <BtnWrap>
-                                <Button to='home'
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact="true"
-                                offset={-80}
-                                primary={primary ? 1 : 0}
-                                dark={dark ? 1 : 0}
-                                dark2={dark2 ? 1 : 0}
-                                >{buttonLabel}</Button>
-                            </BtnWrap>
-                        </TextWrapper>
-                    </Column1>
-                    <Column2>
-                    <ImgWrap>
-                    <Img src={img} alt={alt}/>
-                    </ImgWrap>
-                    </Column2>
-                </ InfoRow>
-            </InfoWrapper>
+            <ServicesCard>
+                <InfoWrapper>
+                    <InfoRow imgStart={imgStart}>
+                        <Column1>
+                            <TextWrapper>
+                                <TopLine>{topLine}</TopLine>
+                                <Heading lightText={lightText}>{heading}</Heading>
+                                <Subtitle darkText={darkText}>{description1}</Subtitle>
+                                <Subtitle darkText={darkText}>{description2}</Subtitle>
+                                <BtnWrap>
+                                    <Button2 to='home'
+                                    onMouseEnter={onHover} onMouseLeave={onHover}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                    primary={primary ? 1 : 0}
+                                    dark={dark ? 1 : 0}
+                                    dark2={dark2 ? 1 : 0}
+                                    >{buttonLabel}{hover ? <ArrowForward /> : <ArrowRight/>}</Button2>
+                                </BtnWrap>
+                            </TextWrapper>
+                        </Column1>
+                        <Column2>
+                        <ImgWrap>
+                        <Img src={img} alt={alt}/>
+                        </ImgWrap>
+                        </Column2>
+                    </ InfoRow>
+                </InfoWrapper>
+            </ServicesCard>
         </InfoContainer>
     </>
     );

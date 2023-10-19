@@ -5,6 +5,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+.App {
+  background: #020416;
+}
+
 .anime {
   display: flex;
 justify-content: center;

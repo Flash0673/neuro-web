@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 export const ServicesContainer = styled.div`
     height: 800px;
@@ -18,13 +19,38 @@ export const ServicesContainer = styled.div`
 `
 
 export const ServicesWrapper = styled.div`
+    padding-top: 100px;
+    padding-right: 1080px;
+    max-height: 500px;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 40px;
+    position: relative;
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 100px;
+        padding-right: 0;
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+`
+
+export const RectangleCardWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 16px;
-    padding: 0 50px;
+    grid-gap: 40px;
+    position: relative;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -36,16 +62,28 @@ export const ServicesWrapper = styled.div`
 `
 
 export const ServicesCard = styled.div`
-    background: #fff;
+    background: #383847;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
-    padding: 30px;
+
+    height: 340px;
+    width: 240px;
+   
     box-shadow: 0 1px 3px rgba (0, 0, 0,0.2);
     transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: 480px) {
+        height: 150px;
+        width: 150px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        height: 200px;
+        width: 200px;
+    }
 
     &:hover {
         transform: scale(1.02);
@@ -55,24 +93,36 @@ export const ServicesCard = styled.div`
 `
 
 export const ServicesIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-bottom:
-    10px;
+    height: 120px;
+    width: 120px;
 `
 export const ServicesH1 = styled.h1`
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 376px) {
+        font-size: 1rem;
     }
 `
 
 export const ServicesH2 = styled.h2`
     font-size: 1rem;
+    color: #BEC1C6;
     margin-bottom: 10px;
+`
+
+export const ServicesAd = styled.h2`
+    font-size: 1rem;
+    color: #fff;
+
+    @media screen and (max-width: 1000px) {
+        
+        font-size: 0.85rem;
+    }
 `
 
 export const ServicesP = styled.p`
@@ -80,3 +130,70 @@ export const ServicesP = styled.p`
     text-align: center;
 `
 
+export const RectangleCard = styled.div`
+    background-color: rgba(217, 217, 217, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    border-radius: 32px;
+    height: 700px;
+    width: 700px;
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba (0, 0, 0,0.2);
+
+    @media screen and (max-width: 480px) {
+        height: 1200;
+        width: 460;
+    }
+`
+
+export const NameRectangleCard = styled.div`
+    background: linear-gradient(#5D48B9, #666AED);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    height: 40px;
+    width: 230px;
+    transform: rotate(-9deg);
+    box-shadow: 0 1px 3px rgba (0, 0, 0,0.2);
+    margin-bottom: 330px;
+    margin-right: 65px;
+
+    @media screen and (max-width: 480px) {
+       display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 230px;
+        width: 200px;
+
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+`
+
+export const ArrowForward = styled (MdArrowForward)`
+margin-left: 8px;
+font-size: 20px;
+`
+
+export const ArrowRight = styled (MdKeyboardArrowRight)`
+margin-left: 8px;
+font-size: 20px;
+`
+export const ServicesBtnWrapper = styled.div`
+margin-top: 80px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+@media screen and (max-width: 1000px) {
+}
+`

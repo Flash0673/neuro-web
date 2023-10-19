@@ -1,12 +1,25 @@
 import styled from 'styled-components'
+import { MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#101021')};
 
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
-    };
+        height: 1100px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 1300px;
+    }
+
+  
 `;
 
 export const InfoWrapper = styled.div`
@@ -25,7 +38,7 @@ export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 coll'` : `'col1 col2'`)};
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'`: `'col1 col1' 'col2 col2'`)}
 }
@@ -48,17 +61,16 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
-    color: #01bf71;
-    font-size: 16px;
+    color: #fff;
+    font-size: 22px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
-    text-transform: uppercase;
     margin-bottom: 16px;
 `
 
 export const Heading = styled.h1`
-margin-bottom: 24px;
+margin-bottom: 40px;
 font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
@@ -80,12 +92,60 @@ display: flex;
 justify-content: flex-start;
 `
 export const ImgWrap = styled.div`
-max-width: 555px;
-height: 100%;
+    max-width: 400px;
+    height: 100%;
 `
 
 export const Img = styled.img `
-width: 100%;
-margin: 0 0 10px 0;
-padding-right: 0;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+    border-radius: 25px;
+`
+
+export const ServicesCard = styled.div`
+    background: linear-gradient(-135deg, #020416, #2D333E);
+    border: 1px solid #454A54;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 32px;
+    height: 600px;
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba (0, 0, 0,0.2);
+    transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: 480px) {
+    height: 1000px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 900px;
+    }
+
+    @media screen and (max-width: 373px) {
+        height: 1050px;
+    }
+
+    @media screen and (max-width: 490px) {
+        height: 1000px;
+    }
+    
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+`
+
+export const ArrowForward = styled (MdArrowForward)`
+margin-left: 8px;
+font-size: 20px;
+`
+
+export const ArrowRight = styled (MdKeyboardArrowRight)`
+margin-left: 8px;
+font-size: 20px;
 `

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button } from '../ButtonElements'
+import { Button1 } from '../ButtonElements'
 import {
   HeroContainer,
   HeroBg,
@@ -29,10 +29,10 @@ const HeroSection = () => {
 
         </HeroP>
         <HeroBtnWrapper>
-          <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button1 to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
             Начать {hover ? <ArrowForward /> : <ArrowRight
             />}
-          </Button>
+          </Button1>
         </HeroBtnWrapper>
       </ HeroContent>
     </HeroContainer>

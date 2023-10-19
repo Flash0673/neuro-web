@@ -14,7 +14,7 @@ import {
     SocialIcons,
     SocialIconLink
 } from './FooterElements';
-import { FaFacebook, FaGit, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaGit, FaTelegram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -67,8 +67,8 @@ const Footer = () => {
                             <> </>All rights reserved
                         </WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href='/' target='_blank' arial-label='Facebook'>
-                                <FaFacebook />
+                            <SocialIconLink href='/' target='_blank' arial-label='Telegram'>
+                                <FaTelegram />
                             </SocialIconLink>
                             <SocialIconLink href='/' target='_blank' arial-label='GitHub'>
                                 <FaGit />

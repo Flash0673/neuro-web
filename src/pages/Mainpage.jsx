@@ -16,15 +16,13 @@ const MainPage = () => {
     };
     
   return (
-    <div>
+    <div className='App'>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <MenuBar />
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne}/>
-      <InfoSection {...homeObjTwo}/>
       <Services />
-      <InfoSection {...homeObjThree}/>
       <Footer />
     </div>
   )
