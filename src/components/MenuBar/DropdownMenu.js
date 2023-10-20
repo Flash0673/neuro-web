@@ -1,25 +1,3 @@
-// import React from 'react'
-// import {
-//     MenuIcon, Nav,
-//     NavbarContainer
-// } from './MenuBarElements'
-// import { FaBars } from 'react-icons/fa'
-// import DropdownMenu from './DropdownMenu'
-
-// const MenuBar = () => {
-//   return (
-//     <Nav>
-//         <NavbarContainer>
-//             <MenuIcon>
-//                 <DropdownMenu />
-//             </MenuIcon>
-//         </NavbarContainer>
-//     </Nav>
-//   )
-// }
-
-// export default MenuBar
-
 // https://github.com/kontentino/react-multilevel-dropdown
 import React from 'react'
 import Dropdown from 'react-multilevel-dropdown';
@@ -29,14 +7,12 @@ import { FaBars } from 'react-icons/fa'
 
 
 
-const MenuBar = () => {
+const DropdownMenu = () => {
   return (
     <div className='dropdown-menu'>
-      <div className='menu-wrapper'>
       <Dropdown
-        title=<MenuIcon/>
+        title=<FaBars/>
         position='right'
-        className="menu"
       >
         <Dropdown.Item >
           Личный кабинет
@@ -83,9 +59,8 @@ const MenuBar = () => {
           </Dropdown.Submenu>
         </Dropdown.Item>
       </Dropdown>
-      </div>
     </div>
   )
 }
 
-export default MenuBar
+export default DropdownMenu
