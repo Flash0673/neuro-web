@@ -18,16 +18,17 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id: 'about',
+    id: 'getstarted',
     lightBg: false,
     LightText: true,
     lightTextDesc: false,
-    topLine: 'Premium Bank',
+    topLine: 'Начните работу с NeuroWeb',
     headline: 'Unlimited Transactions with zero fees',
-    description:
-    'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
-    buttonLabel: 'Get started',
-    imgStart: true,
+    description1:
+    'Если ты являешься энтузиастом искусственного интеллекта, специалистом по исследованию данных или просто любознательным студентом, то твой путь начинается именно здесь.',
+    description2: 'Мы свели процесс работы до 3-х простых шагов, чтобы ты мог начать путь к совершенству ИИ.',
+    buttonLabel: 'К шагам!',
+    imgStart: false,
     img: require('../../assets/images/test.png'),
     alt: 'Car',
     dark: true,

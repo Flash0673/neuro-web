@@ -38,7 +38,7 @@ export const SliderCard = styled.div`  // TODO: Можно попробоват�
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
 
     height: 350px;
     max-width: 250px;
@@ -66,6 +66,8 @@ export const SliderCard = styled.div`  // TODO: Можно попробоват�
 export const CardIcon = styled.img`
     height: 120px;
     width: 120px;
+    margin-left: 60px;
+    margin-top: 30px;
 `
 export const SliderH1 = styled.h1`
     font-size: 2rem;
@@ -85,6 +87,7 @@ export const CardLink = styled.h2`
     font-size: 1rem;
     text-decoration: underline;
     color: #fff;
+    padding: 20px;
 
     @media screen and (max-width: 1000px) {
         
@@ -95,17 +98,18 @@ export const CardLink = styled.h2`
 export const CardText = styled.p`
     font-size: 1rem;
     text-align: center;
+    padding: 20px;
     color: #fff;
 
 `
 
 export const RectangleCard = styled.div` // TODO: Адаптивность подправить 
-    background: linear-gradient(#5D48B9, #666AED);;
+    background: linear-gradient(-135deg, #5D48B9, #666AED);;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    position: absolute;
+    // position: absolute;
     border-radius: 32px;
     height: 600px;
     max-width: 1100px;

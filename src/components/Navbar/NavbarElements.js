@@ -78,7 +78,7 @@ export const NavMenu = styled.ul`
 `
 export const NavItem = styled.li`
   height: 100%;
-  transition: background 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 
   &:hover {
     border-radius: 30px; 

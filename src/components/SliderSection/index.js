@@ -81,7 +81,7 @@ const SliderSection = () => {
     <div>
       <SliderSectionContainer>
         <RectangleCard>
-          <SliderH1>Преимущества</SliderH1>
+          <SliderH1>Новости</SliderH1>
           <SliderWrapper>
             <Slider {...settings}>
               <SliderCard>
