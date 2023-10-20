@@ -70,8 +70,8 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
-font-size: 2rem;
 margin-bottom: 40px;
+font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
 color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
@@ -104,7 +104,7 @@ export const Img = styled.img `
 `
 
 export const ServicesCard = styled.div`
-    background: ${({darkBg}) => (darkBg ? "linear-gradient(-135deg, #020416, #2D333E)": "linear-gradient(90deg, rgb(97, 45, 202) 0%, rgb(156, 131, 236) 100%)")};
+    background: linear-gradient(-135deg, #020416, #2D333E);
     border: 1px solid #454A54;
     display: flex;
     flex-direction: column;

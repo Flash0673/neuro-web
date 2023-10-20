@@ -14,8 +14,7 @@ export const homeObjOne = {
     alt: 'Car',
     dark: true,
     primary: true,
-    darkText: false,
-    darkBg: true
+    darkText: false
 };
 
 export const homeObjTwo = {
@@ -34,9 +33,7 @@ export const homeObjTwo = {
     alt: 'Car',
     dark: true,
     primary: true,
-    darkText: false,
-    display: true,
-    darkBg: true
+    darkText: false
 };
 
 export const homeObjThree = {
@@ -54,28 +51,5 @@ export const homeObjThree = {
     alt: 'Car',
     dark: true,
     primary: true,
-    darkText: false,
-    darkBg: true
+    darkText: false
 };
-
-
-export const homeNLP = {
-    id: 'NLP',
-    lightBg: false,
-    LightText: true,
-    lightTextDesc: false,
-    topLine: 'Что такое NLP?',
-    headline: 'Unlimited Transactions with zero fees',
-    description1:
-    'Natural Language Processing (NLP) - это область искусственного интеллекта, фокусирующаяся на взаимодействии компьютеров с человеческим языком. Она позволяет компьютерам понимать, анализировать и генерировать естественный язык.',
-    description2: 'NLP основан на глубоком обучении и использовании различных моделей, таких как рекуррентные нейронные сети (RNN), сверточные нейронные сети (CNN) и трансформеры. Они позволяют моделям "понимать" контекст и семантику текста, что делает их способными к более точному анализу и обработке текстовых данных.',
-    buttonLabel: 'К шагам!',
-    imgStart: false,
-    img: require('../../assets/images/roboto.png'),
-    alt: 'Roboto',
-    dark: true,
-    primary: true,
-    darkText: false,
-    darkBg: false
-};
-
