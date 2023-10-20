@@ -37,6 +37,7 @@ export const Button2 = styled (LinkR)`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    display: ${({ display }) => (!display ? "none": "auto")} ;
 
     &:hover {
         transition: all 0.2s ease-in-out;
