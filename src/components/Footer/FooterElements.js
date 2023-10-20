@@ -38,7 +38,7 @@ export const FooterLinkItems = styled.div`
     align-items: flex-start;
     margin: 16px;
     text-align: left;
-    width: 160px;
+    width: 180px;
     box-sizing: border-box;
     color: #fff;
 
@@ -61,7 +61,7 @@ export const FooterLink = styled(Link)`
     font-size: 14px;
 
     &:hover {
-        color: #01bf71;
+        color: #612DCA;
         transition: 0.3s ease-out
     }
 `

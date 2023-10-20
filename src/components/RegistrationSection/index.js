@@ -10,24 +10,24 @@ import {
   FormInput,
   FormButton,
   Text
-} from './SigninElements';
+} from './RegistrationElements';
 
-const SignIn = () => {
+const Register = () => {
   const emailPlaceholder = 'Введи почту';
   const passwordPlaceholder = 'Введи пароль';
+  const password2Placeholder = 'Повтори пароль';
   return (
     <>
       <Container>
         <FormWrap>
         <Icon>   </Icon>
           <FormContent>
-            <Form action='#' id="id_form">
-              <FormH1>Вход</FormH1>
+            <Form action='#'>
+              <FormH1>Регистрация</FormH1>
               <FormInput type='email' placeholder={emailPlaceholder} required />
               <FormInput type='password' placeholder={passwordPlaceholder} required />
-              <FormButton type='submit '>Продолжить</FormButton>
-              <Text to='/restore_password'>Забыл пароль?</Text>
-              <a href='/register' className='test'><FormButton type='button'> Регистрация</FormButton></a>
+              <FormInput type='password' placeholder={password2Placeholder} required />
+              <FormButton type='submit'>Продолжить</FormButton>
             </Form>
           </FormContent>
         </FormWrap>
@@ -36,4 +36,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Register;

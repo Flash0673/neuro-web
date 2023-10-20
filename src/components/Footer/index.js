@@ -23,37 +23,18 @@ const Footer = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">How it works</
-                            FooterLink>
-                            <FooterLink to="/signin">Testimonials</
-                            FooterLink>
-                            <FooterLink to="/signin">Careers</FooterLink>
-                            <FooterLink to="/signin">Investors</FooterLink>
-                            <FooterLink to="/signin">Term of Service</FooterLink>
+                            <FooterLinkTitle>О нас</FooterLinkTitle>
+                            <FooterLink to="/signin">- Блог</FooterLink>
+                            <FooterLink to="/team">- Команда</FooterLink>
+                            <FooterLink to="/signin">- Работа</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">How it works</FooterLink>
-                            <FooterLink to="/signin">Testimonials</FooterLink>
-                            <FooterLink to="/signin">Careers</FooterLink>
-                            <FooterLink to="/signin">Investors</FooterLink>
-                            <FooterLink to="/signin">Term of Service</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">How it works</FooterLink>
-                            <FooterLink to="/signin">Testimonials</FooterLink>
-                            <FooterLink to="/signin">Careers</FooterLink>
-                            <FooterLink to="/signin">Investors</FooterLink>
-                            <FooterLink to="/signin">Term of Service</FooterLink>
+                            <FooterLinkTitle>Поддержка</FooterLinkTitle>
+                            <FooterLink to="/signin">- Связь с нами</FooterLink>
+                            <FooterLink to="/private_policy">- Политика Приватности</FooterLink>
+                            <FooterLink to="/signin">- Вопросы и ответы</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>

@@ -83,9 +83,11 @@ export const FormH1 = styled.h1`
   text-align: center;
 `
 export const FormLabel = styled.label`
-  margin-bottom: 8px;
+max-width: 400px;
+  margin-bottom: 28px;
   font-size: 14px;
   color: #fff;
+  opacity: 0.5;
 `;
 
 export const FormInput = styled.input`
@@ -93,9 +95,9 @@ export const FormInput = styled.input`
   color: #fff;
   background: #383847;
   padding: 16px 16px;
-  margin-bottom: 32px;
   border: none;
   border-radius: 10px;
+  margin: auto;
 
   @media screen and (max-width: 460px) {
     width: 250px;
