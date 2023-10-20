@@ -6,7 +6,7 @@
 }
 
 .App {
-  background: #020416;
+  background: #101021;
 }
 
 .upper {
@@ -15,4 +15,8 @@
 
 .lowered {
   margin-top: 50px;
+}
+
+.test {
+  margin: auto;
 }

@@ -45,17 +45,17 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='/discover'>
+              <NavLinks to='/'>
                 Начало
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to='/services'>
-                Войти
+                Блог
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='/signup'>
+              <NavLinks to='/faq'>
                 FAQ
               </NavLinks>
             </NavItem>

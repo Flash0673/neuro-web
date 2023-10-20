@@ -10,11 +10,10 @@ import {
   FormInput,
   FormButton,
   Text
-} from './SigninElements';
+} from './ForgotPasswordElements';
 
-const SignIn = () => {
+const ForgotPassword = () => {
   const emailPlaceholder = 'Введи почту';
-  const passwordPlaceholder = 'Введи пароль';
   return (
     <>
       <Container>
@@ -22,12 +21,10 @@ const SignIn = () => {
         <Icon>   </Icon>
           <FormContent>
             <Form action='#' id="id_form">
-              <FormH1>Вход</FormH1>
+              <FormH1>Восстановление пароля</FormH1>
               <FormInput type='email' placeholder={emailPlaceholder} required />
-              <FormInput type='password' placeholder={passwordPlaceholder} required />
-              <FormButton type='submit '>Продолжить</FormButton>
-              <Text to='/restore_password'>Забыл пароль?</Text>
-              <a href='/register' className='test'><FormButton type='button'> Регистрация</FormButton></a>
+              <FormLabel>Мы вышлем тебе на почту письмо подтверждение о восстановлении пароля.</FormLabel>
+              <FormButton type='submit '>Восстановить пароль</FormButton>
             </Form>
           </FormContent>
         </FormWrap>
@@ -36,4 +33,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default ForgotPassword;
