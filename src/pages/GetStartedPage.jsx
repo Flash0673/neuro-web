@@ -7,7 +7,7 @@ import MenuBar from '../components/MenuBar'
 import InfoSection from '../components/InfoSection'
 import CustomCardsSection from '../components/CustomCardsSection'
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
-import SliderSection from '../components/SliderSection';
+import GetStartedSliderSection from '../components/GetStartedSliderSection';
 
 const GetStartedPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +21,7 @@ const GetStartedPage = () => {
         <Navbar toggle={toggle} />
         <InfoSection {...homeObjTwo}/>
         <CustomCardsSection />
-        <SliderSection />
+        <GetStartedSliderSection />
         <Footer />
     </div>
   )

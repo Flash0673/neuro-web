@@ -17,6 +17,35 @@
   margin-top: 50px;
 }
 
+
 .test {
   margin: auto;
 }
+
+.sub-menu {
+  width: 230px;
+}
+
+.sub-menu-classical-ml {
+  width: 250px;
+}
+
+.dropdown-menu {
+  background: #7258E9;
+  height: 40px;
+}
+
+.menu {
+  margin-top: 3px;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  width: 40px;
+  height: 40px;
+
+}
+
+.menu-wrapper {
+  margin-left: 9.5%;
+}
+
