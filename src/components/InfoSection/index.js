@@ -37,7 +37,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkTe
                                 <Subtitle darkText={darkText}>{description1}</Subtitle>
                                 <Subtitle darkText={darkText}>{description2}</Subtitle>
                                 <BtnWrap>
-                                    <Button2 to='home'
+                                    <Button2 to='getstarted'
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
