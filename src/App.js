@@ -4,6 +4,7 @@ import './App.css';
 import MainPage from './pages/MainPage';
 import SigninPage from './pages/SigninPage';
 import GetStartedPage from './pages/GetStartedPage';
+import NLP from './pages/NLP';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<MainPage/>} />
           <Route path='/signin' element={<SigninPage/>} />
           <Route path='/getstarted' element={<GetStartedPage/>} />
+          <Route path='/nlp' element={<NLP/>} />
         </Routes>
       </BrowserRouter>
     </div>

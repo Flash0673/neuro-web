@@ -17,7 +17,7 @@ import { InfoContainer,
     ArrowRight
  } from './InfoElements';
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkText, description1, description2, buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({darkBg, display, lightBg, id, imgStart, topLine, lightText, heading, darkText, description1, description2, buttonLabel, img, alt, primary, dark, dark2}) => {
     const [hover, setHover] = useState(false)
     const onHover = () => {
         setHover(!hover)
@@ -27,7 +27,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkTe
 
     <>
         <InfoContainer lightBg={lightBg} id={id}>
-            <ServicesCard>
+            <ServicesCard darkBg={darkBg}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
@@ -47,6 +47,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkTe
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
+                                    display={display}
                                     >{buttonLabel}{hover ? <ArrowForward /> : <ArrowRight/>}</Button2>
                                 </BtnWrap>
                             </TextWrapper>
