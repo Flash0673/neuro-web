@@ -17,7 +17,7 @@ import { InfoContainer,
     ArrowRight
  } from './InfoElements';
 
-const InfoSection = ({darkBg, display, lightBg, id, imgStart, topLine, lightText, heading, darkText, description1, description2, buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({darkBg, display, lightBg, id, imgStart, topLine, lightText, heading, darkText, description1, description2, buttonLabel, img, alt, primary, dark, dark2, link}) => {
     const [hover, setHover] = useState(false)
     const onHover = () => {
         setHover(!hover)
@@ -37,7 +37,7 @@ const InfoSection = ({darkBg, display, lightBg, id, imgStart, topLine, lightText
                                 <Subtitle darkText={darkText}>{description1}</Subtitle>
                                 <Subtitle darkText={darkText}>{description2}</Subtitle>
                                 <BtnWrap>
-                                    <Button2 to='getstarted'
+                                    <Button2 to={link}
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
