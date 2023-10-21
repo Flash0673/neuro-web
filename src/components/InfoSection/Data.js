@@ -15,7 +15,8 @@ export const homeObjOne = {
     dark: true,
     primary: true,
     darkText: false,
-    darkBg: true
+    darkBg: true,
+    link: '/getstarted'
 };
 
 export const homeObjTwo = {
@@ -36,7 +37,8 @@ export const homeObjTwo = {
     primary: true,
     darkText: false,
     display: true,
-    darkBg: true
+    darkBg: true,
+    link: 'services'
 };
 
 export const homeObjThree = {
@@ -55,7 +57,8 @@ export const homeObjThree = {
     dark: true,
     primary: true,
     darkText: false,
-    darkBg: true
+    darkBg: true,
+    link: '#'
 };
 
 
@@ -76,7 +79,8 @@ export const homeNLP = {
     dark: true,
     primary: true,
     darkText: false,
-    darkBg: false
+    darkBg: false,
+    link: '/getstarted'
 };
 
 export const homeCV = {

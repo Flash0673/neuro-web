@@ -34,7 +34,7 @@ const Footer = () => {
                             <FooterLinkTitle>Поддержка</FooterLinkTitle>
                             <FooterLink to="/signin">- Связь с нами</FooterLink>
                             <FooterLink to="/private_policy">- Политика Приватности</FooterLink>
-                            <FooterLink to="/signin">- Вопросы и ответы</FooterLink>
+                            <FooterLink to="/FAQ">- Вопросы и ответы</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
@@ -48,13 +48,13 @@ const Footer = () => {
                             <> </>All rights reserved
                         </WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href='/' target='_blank' arial-label='Telegram'>
+                            <SocialIconLink href='https://t.me/+S2VLwdHMfSs2ZTAy' target='_blank' arial-label='Telegram'>
                                 <FaTelegram />
                             </SocialIconLink>
-                            <SocialIconLink href='/' target='_blank' arial-label='GitHub'>
+                            <SocialIconLink href='https://github.com/AimorYou/NeuroWeb' target='_blank' arial-label='GitHub'>
                                 <FaGit />
                             </SocialIconLink>
-                            <SocialIconLink href='/' target='_blank' arial-label='YouTube'>
+                            <SocialIconLink href='https://www.youtube.com/' target='_blank' arial-label='Youtube'>
                                 <FaYoutube />
                             </SocialIconLink>
                         </SocialIcons>
