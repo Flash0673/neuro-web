@@ -15,6 +15,8 @@ import NLP from './pages/NLP';
 import CV from './pages/CV';
 import CLML from './pages/CLML';
 
+import { Classes } from './pages/Classes';
+
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path='/nlp' element={<NLP/>} />
           <Route path='/cv' element={<CV/>} />
           <Route path='/clml' element={<CLML/>} />
+
+          <Route path="/classes" element={<Classes />} />
 
         </Routes>
       </BrowserRouter>

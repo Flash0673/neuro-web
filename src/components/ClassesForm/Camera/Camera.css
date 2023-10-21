@@ -1,0 +1,44 @@
+.card {
+    border-radius: 9px ;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #a900fe;
+    border: 3px solid rgba(255, 0, 207, 0.8)
+}
+
+.photo-container {
+    border-radius: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 2px solid #242424;
+}
+
+.photo-item {
+    margin: 10px;
+    padding: 5px;
+    max-width: calc(10% - 20px);
+    box-sizing: border-box;
+}
+
+.photo-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-item button {
+    display: block;
+    margin-top: 5px;
+}
+
+.webcam {
+    max-width: 300px;
+    max-height: 200px;
+    border-collapse: separate;
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 6px;
+}
