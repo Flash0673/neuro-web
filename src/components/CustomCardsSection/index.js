@@ -4,7 +4,6 @@ import Icon1 from '../../assets/images/Step1.svg'
 import Icon2 from '../../assets/images/Step2.svg'
 import Icon3 from '../../assets/images/Step3.svg'
 
-import { Button1 } from '../ButtonElements'
 
 import {
     ServicesContainer,
@@ -21,7 +20,8 @@ import {
     NameRectangleCard,
     ServicesAd,
     RectangleCardWrapper,
-    ServicesH3
+    ServicesH3,
+    Button
 } from './CustomCardsElements';
 
 const Services = () => {
@@ -60,10 +60,10 @@ const Services = () => {
                 </ServicesCard>
             </ServicesWrapper>
             <ServicesBtnWrapper>
-                <Button1 to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
-                    Попробовать {hover ? <ArrowForward /> : <ArrowRight
-                    />}
-                </Button1>
+                <a href='/signin'><Button to='signin'>
+                    Попробовать
+                </Button>
+                </a>
             </ServicesBtnWrapper>
 
 

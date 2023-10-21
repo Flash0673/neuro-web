@@ -79,7 +79,7 @@ const CLMLSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, 
     <div>
       <SliderSectionContainer>
         <RectangleCard>
-          <SliderH1>Модели NLP</SliderH1>
+          <SliderH1>Классические модели ML</SliderH1>
           <SliderWrapper>
             <Slider {...settings}>
               <SliderItem>

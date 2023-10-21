@@ -95,7 +95,7 @@ const GetStartedSliderSection = ({lightBg, id, imgStart, topLine, lightText, hea
                     <CardText>Загрузи аудиофайлы для анализа и обработки, обучи модель и проверь ее работоспособность в режиме предпросмотра.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
+                    <a href='/nlp'><Button2 to=''
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
@@ -125,7 +125,7 @@ const GetStartedSliderSection = ({lightBg, id, imgStart, topLine, lightText, hea
                     <CardText>Загрузи свои изображения, обучи модель и проверь ее работоспособность в режиме предпросмотра.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <Button1 to='/CV'
+                    <Button2 to='/CV'
                         onMouseEnter={onHover} onMouseLeave={onHover}
                         smooth={true}
                         duration={500}
@@ -136,7 +136,7 @@ const GetStartedSliderSection = ({lightBg, id, imgStart, topLine, lightText, hea
                         dark={dark ? 1 : 0}
                         dark2={dark2 ? 1 : 0}
                         >
-                        Попробовать{buttonLabel}{<ArrowForward />}</Button1>
+                        Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 
@@ -155,7 +155,7 @@ const GetStartedSliderSection = ({lightBg, id, imgStart, topLine, lightText, hea
                     <CardText>Загрузи свои данные, обучи модель и проверь ее работоспособность в режиме предпросмотра.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
+                    <a href='/clml'><Button2 to='getstarted'
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}

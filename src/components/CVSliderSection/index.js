@@ -79,7 +79,7 @@ const CVSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, da
     <div>
       <SliderSectionContainer>
         <RectangleCard>
-          <SliderH1>Классические модели ML</SliderH1>
+          <SliderH1>Компьютерное зрение</SliderH1>
           <SliderWrapper>
             <Slider {...settings}>
               <SliderItem>

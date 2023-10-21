@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
+import { Link as LinkR } from "react-router-dom"
 
 export const ServicesContainer = styled.div`
     height: 800px;
@@ -21,7 +22,6 @@ export const ServicesContainer = styled.div`
 export const ServicesWrapper = styled.div`
     padding-top: 100px;
     max-height: 500px;
-    z-index: 1;
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 40px;
@@ -201,4 +201,17 @@ align-items: center;
 
 @media screen and (max-width: 1000px) {
 }
+`
+
+export const Button = styled.button`
+    border-radius: 50px;
+    background: linear-gradient(#5D48B9, #666AED);  ${({ primary }) => (primary ? '#01BF71' : '#010606')};
+    padding: ${({ big }) => (big ? '14px 48px' : '12px 30px' )};
+    color: ${({ dark }) => (dark ? '#010606' : '#fff')};
+    font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')} ;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
