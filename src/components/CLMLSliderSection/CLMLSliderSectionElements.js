@@ -66,6 +66,7 @@ export const CardIcon = styled.img`
     margin-right: 60px;
     margin-left: 60px;
     margin-top: 30px;
+    border-radius: 48px;
 
     @media screen and (max-width: 480px) {
         /* height: 300px; */
