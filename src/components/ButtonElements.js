@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link as LinkS} from 'react-scroll';
 import { Link as LinkR } from "react-router-dom"
 
 export const Button1 = styled (LinkR)`
@@ -19,11 +19,11 @@ export const Button1 = styled (LinkR)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${({ primary }) => (primary ? '#fff' : '#01BF71' )};
+        background: linear-gradient(#5D48B9, #666AED);  ${({ primary }) => (primary ? '#01BF71' : '#010606')};
     } 
 `
 
-export const Button2 = styled (LinkR)`
+export const Button2 = styled (LinkS)`
     border-radius: 50px;
     background: #D9D9D9;
     white-space: nowrap;

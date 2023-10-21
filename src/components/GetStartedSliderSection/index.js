@@ -4,6 +4,7 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Button1 } from "../ButtonElements";
 import {
   SliderSectionContainer,
   SliderH1,
@@ -124,18 +125,18 @@ const GetStartedSliderSection = ({lightBg, id, imgStart, topLine, lightText, hea
                     <CardText>Загрузи свои изображения, обучи модель и проверь ее работоспособность в режиме предпросмотра.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
-                                    onMouseEnter={onHover} onMouseLeave={onHover}
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                    >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                    <Button1 to='/CV'
+                        onMouseEnter={onHover} onMouseLeave={onHover}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                        primary={primary ? 1 : 0}
+                        dark={dark ? 1 : 0}
+                        dark2={dark2 ? 1 : 0}
+                        >
+                        Попробовать{buttonLabel}{<ArrowForward />}</Button1>
                   </BtnWrap>
                 </Wrapper>
 

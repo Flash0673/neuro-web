@@ -86,7 +86,7 @@ const SliderSection = () => {
             <Slider {...settings}>
               <SliderCard>
                 <CardIcon src={Icon1}></CardIcon>
-                <CardText>Новое! В NeuroWeb появилась новая модель классического ML</CardText>
+                <CardText>Новое! В NeuroWeb появилась новая языковая модель</CardText>
                 <a href="#"><CardLink>Узнать больше</CardLink></a>
               </SliderCard>
               <SliderCard>
@@ -96,12 +96,12 @@ const SliderSection = () => {
               </SliderCard>
               <SliderCard>
                 <CardIcon src={Icon1}></CardIcon>
-                <CardText>Новое! В NeuroWeb появилась новая модель классического ML</CardText>
+                <CardText>Новое! В NeuroWeb появилась новая модель компютерного зрения</CardText>
                 <a href="#"><CardLink>Узнать больше</CardLink></a>
               </SliderCard>
               <SliderCard>
                 <CardIcon src={Icon1}></CardIcon>
-                <CardText>Новое! В NeuroWeb появилась новая модель классического ML</CardText>
+                <CardText>Новое! В NeuroWeb появился новый метод для продвинутой аналитики</CardText>
                 <a href="#"><CardLink>Узнать больше</CardLink></a>
               </SliderCard>
             </Slider>
