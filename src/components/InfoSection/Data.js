@@ -79,3 +79,43 @@ export const homeNLP = {
     darkBg: false
 };
 
+export const homeCV = {
+    id: 'CV',
+    lightBg: false,
+    LightText: true,
+    lightTextDesc: false,
+    topLine: 'Что такое компьютерное зрение?',
+    headline: 'Unlimited Transactions with zero fees',
+    description1:
+    'Computer Vision (CV) - это область искусственного интеллекта, которая сосредотачивается на развитии компьютерных систем, способных "видеть" и интерпретировать визуальные данные, аналогично человеческому зрению.',
+    description2: 'Блок CV основан на глубоком обучении и использует различные типы нейронных сетей, таких как сверточные нейронные сети (CNN). Эти модели анализируют визуальные данные, выделяя важные признаки и особенности. Они обучаются распознавать паттерны и объекты на изображениях.',
+    buttonLabel: 'К шагам!',
+    imgStart: false,
+    img: require('../../assets/images/CV-home.png'),
+    alt: 'Roboto',
+    dark: true,
+    primary: true,
+    darkText: false,
+    darkBg: false
+};
+
+export const homeCLML = {
+    id: 'CV',
+    lightBg: false,
+    LightText: true,
+    lightTextDesc: false,
+    topLine: 'Что такое классическое ML?',
+    headline: 'Unlimited Transactions with zero fees',
+    description1:
+    'Классическое Машинное Обучение (Classical Machine Learning) - это подход к разработке алгоритмов, в котором модели обучаются на основе данных с учетом их характеристик и признаков.',
+    description2: 'Блок Classical ML использует разнообразные методы и алгоритмы, такие как регрессия, деревья решений, метод опорных векторов и многие другие. Модели обучаются на размеченных данных, используя различные признаки для прогнозирования результатов.',
+    buttonLabel: 'К шагам!',
+    imgStart: false,
+    img: require('../../assets/images/CLML.png'),
+    alt: 'Roboto',
+    dark: true,
+    primary: true,
+    darkText: false,
+    darkBg: false
+};
+

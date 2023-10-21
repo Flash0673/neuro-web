@@ -12,6 +12,8 @@ import Register from './pages/RegisterPage'
 import ForgotPassword from './pages/ForgotPassword'
 
 import NLP from './pages/NLP';
+import CV from './pages/CV';
+import CLML from './pages/CLML';
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
           <Route path='/restore_password' element={<ForgotPassword/>} />
 
           <Route path='/nlp' element={<NLP/>} />
+          <Route path='/cv' element={<CV/>} />
+          <Route path='/clml' element={<CLML/>} />
 
         </Routes>
       </BrowserRouter>
