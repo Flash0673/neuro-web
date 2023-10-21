@@ -113,6 +113,13 @@ export const ServicesH2 = styled.h2`
     margin-bottom: 10px;
 `
 
+export const ServicesH3 = styled.h3`
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 20px;
+    max-width: 250px;
+`
+
 export const ServicesAd = styled.h2`
     font-size: 1rem;
     color: #fff;

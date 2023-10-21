@@ -10,11 +10,11 @@ const Sidebar = ({isOpen, toggle}) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to='/'>Начало</SidebarLink>
-          <SidebarLink to='/signin'>Начало</SidebarLink>
+          <SidebarLink to='/'>Блог</SidebarLink>
           <SidebarLink to='/faq'>FAQ</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
+          <SidebarRoute to="/signin">Вход</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

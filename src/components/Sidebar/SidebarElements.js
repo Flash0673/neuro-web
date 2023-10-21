@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: #101021;
   display: grid;
   align-items: center;
   top: 0;
@@ -47,7 +47,7 @@ text-align: center;
 }
 `;
 
-export const SidebarLink = styled(LinkS)`
+export const SidebarLink = styled(LinkR)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,9 +58,9 @@ export const SidebarLink = styled(LinkS)`
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  margin: 10px;
 
   &:hover {
-    color: #01bf71;
     transition: 0.2s ease-in-out;
   }
 `;
@@ -71,21 +71,20 @@ export const SideBtnWrap = styled.div`
 `;
 export const SidebarRoute = styled (LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #666AED;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
-  font-size: 16px;
+  color: #fff;
+  font-size: 20px;
   outline: none;
   border: none;
   cursor: pointer;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  margin: 20px;
 
   &: hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
   }
 `;
