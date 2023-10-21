@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar'
 import MenuBar from '../components/MenuBar'
 import InfoSection from '../components/InfoSection'
 import NLPCardSection from '../components/NLPCardSection'
-import GetStartedSliderSection from '../components/GetStartedSliderSection';
+import NLPSliderSection from '../components/NLPSliderSection';
 
 const NLP = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const NLP = () => {
       <Navbar toggle={toggle} />
       <InfoSection {...homeNLP} />
       <NLPCardSection />
-      <GetStartedSliderSection />
+      <NLPSliderSection />
       <Footer />
     </div>
   )
