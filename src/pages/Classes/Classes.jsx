@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 
 const Classes = () => {
   return (
-    <div>
+    <div className='Classes-container'>
       <Navbar/>
     <React.Fragment>
         <ClassesForm/>

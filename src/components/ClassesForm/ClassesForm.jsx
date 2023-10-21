@@ -46,11 +46,11 @@ const ClassesForm = () => {
       {forms.map(form => (
         <div key={form.id}>
           <Photo photos={form.photos} formId={form.id} deletePhoto={deletePhoto} />
-          <button onClick={() => deleteForm(form.id)}>Удалить форму</button>
+          <button className='btn' onClick={() => deleteForm(form.id)}>Удалить форму</button>
           <Camera formId={form.id} TakePhoto={() => TakePhoto(form.id)} />
         </div>
       ))}
-      <button onClick={addForm}>Добавить форму</button>
+      <button className='btn' onClick={addForm}>Добавить форму</button>
     </React.Fragment>
   );
 };

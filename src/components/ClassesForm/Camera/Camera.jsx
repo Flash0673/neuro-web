@@ -43,7 +43,7 @@ const CameraForm = () => {
   return (
     <React.Fragment>
       <div className="card">
-        <button onClick={() => setShowCamera(!showCamera)}>
+        <button className='btn' onClick={() => setShowCamera(!showCamera)}>
           {showCamera ? 'Скрыть камеру' : 'Показать камеру'}
         </button>
         {showCamera && (
@@ -58,10 +58,10 @@ const CameraForm = () => {
           {capturedPhotos.map((photo, index) => (
             <div key={photo.id} className="photo-item">
               <img src={photo.photo} alt={`Photo ${index}`} />
-              <button className={'btn'} onClick={() => deletePhoto(index)}>Delete</button>
+              <button className='btn' className={'btn'} onClick={() => deletePhoto(index)}>Delete</button>
             </div>
           ))}
-          <button onClick={handleSavePhotos}>Сохранить все фото</button>
+          <button className='btn' onClick={handleSavePhotos}>Сохранить все фото</button>
         </div>
       </div>
     </React.Fragment>
