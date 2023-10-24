@@ -216,7 +216,7 @@ export const SliderH2 = styled.h1`
     }
 `
 
-export const Button2 = styled.button`
+export const Button2 = styled(LinkR)`
     margin-top: 20px;
     border-radius: 50px;
     background: #D9D9D9;

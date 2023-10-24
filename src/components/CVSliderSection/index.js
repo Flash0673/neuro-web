@@ -92,7 +92,7 @@ const CVSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, da
                     <CardText> Модель классификации изображений в NeuroWeb представляет собой мощный инструмент для автоматического распознавания и категоризации объектов на изображениях. Она обучена анализировать визуальные данные и присваивать им соответствующие метки или классы. </CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
+                    <Button2 to='/getstarted'
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
@@ -103,7 +103,7 @@ const CVSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, da
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
                                     >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 
@@ -120,7 +120,7 @@ const CVSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, da
                     <CardText> Модель распознавания лиц в NeuroWeb представляет собой инструмент для автоматического анализа и идентификации лиц на изображениях или видео. Эта модель обучена точно определять особенности лица и при необходимости идентифицировать конкретного человека.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
+                    <Button2 to='/getstarted'
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
@@ -131,7 +131,7 @@ const CVSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, da
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
                                     >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 
@@ -149,7 +149,7 @@ const CVSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, da
                     <CardText>Модель распознавания поз в NeuroWeb представляет собой инструмент для автоматического анализа и интерпретации поз человека на изображениях или видео. Она способна точно определить положение тела и конечностей, что делает её важным инструментом для анализа движений и действий. </CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
+                    <Button2 to='/getstarted'
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
@@ -160,7 +160,7 @@ const CVSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, da
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
                                     >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 

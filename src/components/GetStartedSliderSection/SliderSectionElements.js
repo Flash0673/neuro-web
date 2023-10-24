@@ -210,12 +210,13 @@ export const SliderH2 = styled.h1`
     }
 `
 
-export const Button2 = styled.button`
+export const Button2 = styled(LinkR)`
     margin-top: 20px;
     border-radius: 50px;
     background: #D9D9D9;
     padding: 12px 32px;
     text-decoration: none;
+    outline: none;
     color: '#010606';
     font-size: 16px ;
     border: none;

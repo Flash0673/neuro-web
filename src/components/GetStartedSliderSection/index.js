@@ -95,18 +95,18 @@ const GetStartedSliderSection = ({lightBg, id, imgStart, topLine, lightText, hea
                     <CardText>Загрузи аудиофайлы для анализа и обработки, обучи модель и проверь ее работоспособность в режиме предпросмотра.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href='/nlp'><Button2 to=''
-                                    onMouseEnter={onHover} onMouseLeave={onHover}
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                    >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                  <Button2 to='/nlp'
+                        onMouseEnter={onHover} onMouseLeave={onHover}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                        primary={primary ? 1 : 0}
+                        dark={dark ? 1 : 0}
+                        dark2={dark2 ? 1 : 0}
+                        >
+                        Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 
@@ -155,18 +155,18 @@ const GetStartedSliderSection = ({lightBg, id, imgStart, topLine, lightText, hea
                     <CardText>Загрузи свои данные, обучи модель и проверь ее работоспособность в режиме предпросмотра.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href='/clml'><Button2 to='getstarted'
-                                    onMouseEnter={onHover} onMouseLeave={onHover}
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                    >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                  <Button2 to='/clml'
+                        onMouseEnter={onHover} onMouseLeave={onHover}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                        primary={primary ? 1 : 0}
+                        dark={dark ? 1 : 0}
+                        dark2={dark2 ? 1 : 0}
+                        >
+                        Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 
