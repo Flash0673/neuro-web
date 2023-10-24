@@ -38,48 +38,64 @@ const MenuBar = () => {
         position='right'
         className="menu"
       >
-        <Dropdown.Item >
+        <a href='/signin'><Dropdown.Item >
           Личный кабинет
         </Dropdown.Item>
+        </a>
         <Dropdown.Item>
           Выбрать модель
           <Dropdown.Submenu position='right'>
+            <a href='/CV'>
             <Dropdown.Item>
               CV
               <Dropdown.Submenu position='right' className='sub-menu'>
+              <a href='/classes'>
               <Dropdown.Item>
                   Классификация изображений
                 </Dropdown.Item>
+                </a>
+                <a href='/classes'>
                 <Dropdown.Item>
                   Распознавание лиц
                 </Dropdown.Item>
+                </a>
+                <a href='/classes'>
                 <Dropdown.Item>
                   Позы
                 </Dropdown.Item>
+                </a>
               </Dropdown.Submenu>
             </Dropdown.Item>
+            </a>
+            <a href='/NLP'>
             <Dropdown.Item>
               NLP
               <Dropdown.Submenu position='right'>
+              <a href='/classes'>
               <Dropdown.Item>
                   Распознавание речи
                 </Dropdown.Item>
+                </a>
               </Dropdown.Submenu>
             </Dropdown.Item>
+            </a>
+            <a href='CLML'>
             <Dropdown.Item>
               Classical ML
               <Dropdown.Submenu position='right' className='sub-menu-classical-ml'>
+              <a href='/classes'>
               <Dropdown.Item>
                   Предсказание столбца в таблице
                 </Dropdown.Item>
+                </a>
+                <a href='/classes'>
                 <Dropdown.Item>
                   Продвинутая аналитика
                 </Dropdown.Item>
+                </a>
               </Dropdown.Submenu>
             </Dropdown.Item>
-            <Dropdown.Item>
-              3D
-            </Dropdown.Item>
+            </a>
           </Dropdown.Submenu>
         </Dropdown.Item>
       </Dropdown>

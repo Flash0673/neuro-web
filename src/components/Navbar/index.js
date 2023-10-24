@@ -50,8 +50,8 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='/services'>
-                Блог
+              <NavLinks to='/signin'>
+                Вход
               </NavLinks>
             </NavItem>
             <NavItem>
