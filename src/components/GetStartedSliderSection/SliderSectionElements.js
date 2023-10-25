@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { Link as LinkR } from 'react-router-dom';
 
 export const SliderSectionContainer = styled.div`
@@ -47,13 +47,22 @@ export const SliderItem = styled.div`  // TODO: Можно попробоват�
     box-shadow: 0 1px 3px rgba (0, 0, 0,0.2);
     transition: all 0.2s ease-in-out;
 
-    @media screen and (max-width: 480px) {
-
-    }
-
     @media screen and (max-width: 1000px) {
-
+    margin-left: 18%;
     }
+    @media screen and (max-width: 660px) {
+        margin-left: 15%;
+    }
+
+    @media screen and (max-width: 610px) {
+        margin-left: 12%;
+    }
+
+    @media screen and (max-width: 545px) {
+        margin-left: 0%;
+    }
+
+    
 
 
 `
@@ -119,6 +128,7 @@ export const CardText = styled.p`
   /* margin-bottom: 15px; */
   @media screen and (max-width: 1000px) {
         font-size: 14px;
+        text-align: center;
     }
     @media screen and (max-width: 480px) {
         font-size: 10px;
@@ -161,6 +171,7 @@ export const ImgWrapper = styled.div`
 export const TextWrapper = styled.div`
     display: grid;
     height: 100%;
+    place-items: center;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     /* gird-gap: 60px */
 
@@ -177,7 +188,7 @@ export const Wrapper = styled.div`
 
         grid-template-columns: 1fr;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr;
     }
 
@@ -231,9 +242,9 @@ export const Button2 = styled(LinkR)`
     } 
 
     @media screen and (max-width: 480px) {
-        font-size: 14px;
+        font-size: 10px;
     }
     @media screen and (max-width: 376px) {
-        font-size: 10px;
+        font-size: 8px;
     }
 `
