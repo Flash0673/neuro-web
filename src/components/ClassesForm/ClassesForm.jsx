@@ -1,6 +1,9 @@
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import React, { useRef, useState } from 'react';
 import { Camera } from './Camera';
 import { Photo } from './Photo';
+import './ClassesForm.css';
+
 
 const ClassesForm = () => {
   const [forms, setForms] = useState([]);
@@ -50,7 +53,7 @@ const ClassesForm = () => {
           <Camera formId={form.id} TakePhoto={() => TakePhoto(form.id)} />
         </div>
       ))}
-      <button className='btn' onClick={addForm}>Добавить форму</button>
+      <button className='add-form-btn' onClick={addForm}>Добавьте класс</button>
     </React.Fragment>
   );
 };

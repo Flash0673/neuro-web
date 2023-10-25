@@ -1,6 +1,10 @@
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import React, { useRef, useState } from 'react';
 import Webcam from 'react-webcam';
 import './Camera.css';
+import Dropdown from 'react-multilevel-dropdown';
 
 const CameraForm = () => {
   const webcamRef = useRef(null);
@@ -40,11 +44,29 @@ const CameraForm = () => {
     }
   };
 
+  const MenuBar = () => {
+    return (
+      <div className='more-btn'>
+        <div>
+        <Dropdown
+          title=<MoreVertIcon/>
+          className="more-btn">
+              <Dropdown.Item  onClick={() => setShowCamera(!showCamera)} >
+                Удалить класс
+              </Dropdown.Item>
+        </Dropdown>
+        </div>
+      </div>
+    )
+  }
+    
   return (
     <React.Fragment>
       <div className="card">
-        <button className='btn' onClick={() => setShowCamera(!showCamera)}>
-          {showCamera ? 'Скрыть камеру' : 'Показать камеру'}
+        <MenuBar/>
+        <div class="horizontal-line"></div>
+        <button className='icon-btn' onClick={() => setShowCamera(!showCamera)}>
+          <CameraAltIcon/>
         </button>
         {showCamera && (
           <div>
@@ -58,10 +80,10 @@ const CameraForm = () => {
           {capturedPhotos.map((photo, index) => (
             <div key={photo.id} className="photo-item">
               <img src={photo.photo} alt={`Photo ${index}`} />
-              <button className='btn' className={'btn'} onClick={() => deletePhoto(index)}>Delete</button>
+              <button className='btn' onClick={() => deletePhoto(index)}>Delete</button>
             </div>
           ))}
-          <button className='btn' onClick={handleSavePhotos}>Сохранить все фото</button>
+          <button className='icon-btn' onClick={handleSavePhotos}><SaveAltIcon/></button>
         </div>
       </div>
     </React.Fragment>
