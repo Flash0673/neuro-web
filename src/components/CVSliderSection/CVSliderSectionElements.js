@@ -69,12 +69,11 @@ export const CardIcon = styled.img`
 
     @media screen and (max-width: 480px) {
         /* height: 300px; */
-        width: 300px;
+        width: 200px;
 }
 
 @media screen and (max-width: 1000px) {
-    height: 200px;
-    width: 200px;
+    width: 300px;
 }
     
 
@@ -115,14 +114,15 @@ export const CardText = styled.p`
   text-align: left;
   font-size: 18px;
   white-space: pre-line;
+
   /* justify-items: center; */
   /* align-self: center; */
   color: #fff;
-  max-width: 400px;
   display: inline;
   /* margin-bottom: 15px; */
   @media screen and (max-width: 1000px) {
         font-size: 14px;
+        text-align: center;
     }
     @media screen and (max-width: 480px) {
         font-size: 10px;
@@ -146,12 +146,13 @@ export const RectangleCard = styled.div` // TODO: Адаптивность по�
 
     @media screen and (max-width: 1100px) {
         width: 95%;
+        height: 70%;
     }
 
     @media screen and (max-width: 480px) {
         width: 95%;
-        height: 1200;
-        width: 460;
+
+        
     }
 `
 
@@ -164,10 +165,13 @@ export const ImgWrapper = styled.div`
 
 export const TextWrapper = styled.div`
     display: grid;
+    place-items: center;
     height: 100%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     justify-items: center;
-    /* gird-gap: 60px */
+    text-align: left;
+    /* gird-gap: 10px */
+
 
 `
 
@@ -177,14 +181,15 @@ export const Wrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     /* align-items: center; */
     /* justify-content: center; */
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr;
+    }
 
     @media screen and (max-width: 480px) {
 
         grid-template-columns: 1fr;
     }
-    @media screen and (max-width: 800px) {
-        grid-template-columns: 1fr;
-    }
+    
 
 `
 
@@ -203,6 +208,7 @@ export const BtnWrap = styled.div`
 `
 
 export const SliderH2 = styled.h1`
+    margin-top: 30px;
     font-size: 1.8rem;
     /* margin-bottom: 20px; */
     color: #fff;
@@ -235,9 +241,9 @@ export const Button2 = styled(LinkR)`
     } 
 
     @media screen and (max-width: 480px) {
-        font-size: 14px;
+        font-size: 10px;
     }
     @media screen and (max-width: 376px) {
-        font-size: 10px;
+        font-size: 8px;
     }
 `

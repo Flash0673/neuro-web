@@ -26,7 +26,9 @@ export const SliderWrapper = styled.div`
     /* z-index: 1; */
     max-width: 1000px;
     /* display: flex; */
+
     align-items: center;
+
     /* position: relative; */
 
 `
@@ -39,6 +41,7 @@ export const SliderCard = styled.div`  // TODO: Можно попробоват�
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    margin-left: 13%;
 
     height: 350px;
     max-width: 250px;
@@ -46,14 +49,15 @@ export const SliderCard = styled.div`  // TODO: Можно попробоват�
     box-shadow: 0 1px 3px rgba (0, 0, 0,0.2);
     transition: all 0.2s ease-in-out;
 
-    @media screen and (max-width: 480px) {
-        height: 150px;
-        width: 150px;
+    @media screen and (max-width: 1000px) {
+      margin-left: 25%;
+      height: 320px;
     }
 
-    @media screen and (max-width: 1000px) {
-        height: 200px;
-        width: 200px;
+
+    @media screen and (max-width: 780px) {
+      margin-left: 37%;
+      height: 320px;
     }
 
     &:hover {
@@ -88,9 +92,10 @@ export const CardLink = styled.h2`
     text-decoration: underline;
     color: #fff;
     padding: 20px;
+    padding-left: 26%;
 
     @media screen and (max-width: 1000px) {
-        
+        padding-left: 29%;
         font-size: 0.85rem;
     }
 `
@@ -101,13 +106,17 @@ export const CardText = styled.p`
     padding: 20px;
     color: #fff;
 
+    @media screen and (max-width: 1000px) {
+        text-align: center;
+    }
+
 `
 
 export const RectangleCard = styled.div` // TODO: Адаптивность подправить 
     background: linear-gradient(-135deg, #5D48B9, #666AED);;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     // position: absolute;
     border-radius: 32px;
@@ -116,7 +125,12 @@ export const RectangleCard = styled.div` // TODO: Адаптивность по�
     padding: 30px;
     box-shadow: 0 1px 3px rgba (0, 0, 0,0.2);
 
+    @media screen and (max-width: 1100px) {
+        width: 95%;
+    }
+
     @media screen and (max-width: 480px) {
+        width: 95%;
         height: 1200;
         width: 460;
     }
