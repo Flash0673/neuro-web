@@ -92,7 +92,7 @@ const CLMLSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, 
                     <CardText> CatBoost — это алгоритм градиентного бустинга на деревьях решений. Он разработан исследователями и инженерами Яндекса и используется для систем поиска, рекомендаций, личного помощника, беспилотных автомобилей, прогнозирования погоды и многих других задач в Яндексе.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
+                    <Button2 to='/getstarted'
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
@@ -103,7 +103,7 @@ const CLMLSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, 
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
                                     >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 
@@ -120,7 +120,7 @@ const CLMLSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, 
                     <CardText> XGBoost — это оптимизированная распределенная библиотека градиентного бустинга, разработанная для обеспечения высокой эффективности, гибкости и портативности.XGBoost обеспечивает параллельное повышение уровня дерева, которое позволяет быстро и точно решить многие проблемы обработки данных.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
+                    <Button2 to='/getstarted'
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
@@ -131,7 +131,7 @@ const CLMLSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, 
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
                                     >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 
@@ -150,7 +150,7 @@ const CLMLSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, 
 поддержку параллельного, распределенного и графического обучения, а также оптимизирован для имплементации на большом объеме данных.</CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
+                    <Button2 to='/getstarted'
                                     onMouseEnter={onHover} onMouseLeave={onHover}
                                     smooth={true}
                                     duration={500}
@@ -161,7 +161,7 @@ const CLMLSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, 
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
                                     >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 

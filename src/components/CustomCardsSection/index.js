@@ -23,6 +23,7 @@ import {
     ServicesH3,
     Button
 } from './CustomCardsElements';
+import { Button1 } from '../ButtonElements';
 
 const Services = () => {
     const [hover, setHover] = useState(false)
@@ -60,10 +61,11 @@ const Services = () => {
                 </ServicesCard>
             </ServicesWrapper>
             <ServicesBtnWrapper>
-                <a href='/signin'><Button to='signin'>
-                    Попробовать
-                </Button>
-                </a>
+                <Button1 to='/signin' onMouseEnter={onHover} onMouseLeave={onHover}>
+                    Попробовать {hover ? <ArrowForward /> : <ArrowRight
+                    />}
+                </Button1>
+               
             </ServicesBtnWrapper>
 
 

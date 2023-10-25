@@ -58,7 +58,7 @@ function SamplePrevArrow(props) {
 }
 
 
-const NLPSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkText, description1, description2, buttonLabel, img, alt, primary, dark, dark2}) => {
+const NLPSliderSection = ({ lightBg, id, imgStart, topLine, lightText, heading, darkText, description1, description2, buttonLabel, img, alt, primary, dark, dark2 }) => {
 
   const settings = {
     dots: false,
@@ -72,9 +72,9 @@ const NLPSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, d
 
   const [hover, setHover] = useState(false)
   const onHover = () => {
-      setHover(!hover)
+    setHover(!hover)
   }
-  
+
   return (
     <div>
       <SliderSectionContainer>
@@ -92,18 +92,18 @@ const NLPSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, d
                     <CardText>Модель принимает на вход векторные представления n предыдущих слов и может «понимать» семантику предложения. </CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
-                                    onMouseEnter={onHover} onMouseLeave={onHover}
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                    >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                    <Button2 to='/getstarted'
+                      onMouseEnter={onHover} onMouseLeave={onHover}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 
@@ -120,18 +120,18 @@ const NLPSliderSection = ({lightBg, id, imgStart, topLine, lightText, heading, d
                     <CardText>Исследуй мир через глаза искусственного интеллекта с помощью компьютерного зрения. </CardText>
                   </TextWrapper>
                   <BtnWrap>
-                    <a href="#"><Button2 to='getstarted'
-                                    onMouseEnter={onHover} onMouseLeave={onHover}
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                    >
-                                    Попробовать{buttonLabel}{<ArrowForward />}</Button2></a>
+                    <Button2 to='/getstarted'
+                      onMouseEnter={onHover} onMouseLeave={onHover}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      Попробовать{buttonLabel}{<ArrowForward />}</Button2>
                   </BtnWrap>
                 </Wrapper>
 

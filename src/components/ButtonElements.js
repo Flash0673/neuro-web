@@ -11,6 +11,7 @@ export const Button1 = styled (LinkR)`
     padding: ${({ big }) => (big ? '14px 48px' : '12px 30px' )};
     color: ${({ dark }) => (dark ? '#010606' : '#fff')};
     font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')} ;
+    text-decoration: none;
     outline: none;
     border: none;
     cursor: pointer;
@@ -18,6 +19,7 @@ export const Button1 = styled (LinkR)`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -32,6 +34,7 @@ export const Button2 = styled (LinkS)`
     padding: ${({ big }) => (big ? '12px 32px' : '12px 32px' )};
     color: ${({ dark }) => (dark ? '#010606' : '#fff')};
     font-size: ${({ fontBig }) => (fontBig ? '16px' : '16px')} ;
+    text-decoration: none;
     outline: none;
     border: none;
     cursor: pointer;

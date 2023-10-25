@@ -64,7 +64,7 @@ const NLPCardSection = () => {
                 </ServicesCard>
             </ServicesWrapper>
             <ServicesBtnWrapper>
-                <Button1 to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+                <Button1 to='/signup' onMouseEnter={onHover} onMouseLeave={onHover}>
                     Попробовать {hover ? <ArrowForward /> : <ArrowRight
                     />}
                 </Button1>
