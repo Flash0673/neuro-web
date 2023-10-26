@@ -20,7 +20,8 @@ import {
   ArrowRight,
   NameRectangleCard,
   ServicesAd,
-  RectangleCardWrapper
+  RectangleCardWrapper,
+  Button
 } from './CVCardSectionElements';
 
 const CVCardSection = () => {
@@ -64,10 +65,12 @@ const CVCardSection = () => {
         </ServicesCard>
       </ServicesWrapper>
       <ServicesBtnWrapper>
-        <Button1 to='/signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+        <Button to='cv-slider' onMouseEnter={onHover} onMouseLeave={onHover} smooth={true}
+                                    duration={500}
+                                    spy={true}>
           Попробовать {hover ? <ArrowForward /> : <ArrowRight
           />}
-        </Button1>
+        </Button>
       </ServicesBtnWrapper>
 
 

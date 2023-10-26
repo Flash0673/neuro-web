@@ -4,7 +4,7 @@ import NLP1 from '../../assets/images/NLP-1.png'
 import NLP2 from '../../assets/images/NLP-2.png'
 import NLP3 from '../../assets/images/NLP-3.png'
 
-import { Button1 } from '../ButtonElements'
+import { Button1, Button2 } from '../ButtonElements'
 
 import {
     ServicesContainer,
@@ -20,7 +20,8 @@ import {
     ArrowRight,
     NameRectangleCard,
     ServicesAd,
-    RectangleCardWrapper
+    RectangleCardWrapper,
+    Button
 } from './NLPCardSectionElements';
 
 const NLPCardSection = () => {
@@ -64,10 +65,12 @@ const NLPCardSection = () => {
                 </ServicesCard>
             </ServicesWrapper>
             <ServicesBtnWrapper>
-                <Button1 to='/signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+                <Button to='nlp-slider' onMouseEnter={onHover} onMouseLeave={onHover} smooth={true}
+                                    duration={500}
+                                    spy={true}>
                     Попробовать {hover ? <ArrowForward /> : <ArrowRight
                     />}
-                </Button1>
+                </Button>
             </ServicesBtnWrapper>
 
 
