@@ -46,12 +46,12 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks to='/'>
-                Начало
+                Главная
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='/signin'>
-                Вход
+              <NavLinks to='/getstarted'>
+                Начать
               </NavLinks>
             </NavItem>
             <NavItem>

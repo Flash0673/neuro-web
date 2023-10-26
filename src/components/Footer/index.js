@@ -24,7 +24,7 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>О нас</FooterLinkTitle>
-                            <FooterLink to="/signin">- Блог</FooterLink>
+                            {/* <FooterLink to="/signin">- Блог</FooterLink> */}
                             <FooterLink to="/team">- Команда</FooterLink>
                             <FooterLink to="/signin">- Работа</FooterLink>
                         </FooterLinkItems>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Поддержка</FooterLinkTitle>
-                            <FooterLink to="/signin">- Связь с нами</FooterLink>
+                            <FooterLink to="https://t.me/+S2VLwdHMfSs2ZTAy">- Связь с нами</FooterLink>
                             <FooterLink to="/private_policy">- Политика Приватности</FooterLink>
                             <FooterLink to="/FAQ">- Вопросы и ответы</FooterLink>
                         </FooterLinkItems>

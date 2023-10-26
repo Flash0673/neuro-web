@@ -78,7 +78,7 @@ const GetStartedSliderSection = ({lightBg, id, imgStart, topLine, lightText, hea
   
   return (
     <div>
-      <SliderSectionContainer>
+      <SliderSectionContainer id={"get-started-slider"}>
         <RectangleCard>
           <SliderH1>Области машинного обучения</SliderH1>
           <SliderWrapper>

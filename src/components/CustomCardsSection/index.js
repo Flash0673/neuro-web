@@ -23,7 +23,7 @@ import {
     ServicesH3,
     Button
 } from './CustomCardsElements';
-import { Button1 } from '../ButtonElements';
+import { Button1, Button2 } from '../ButtonElements';
 
 const Services = () => {
     const [hover, setHover] = useState(false)
@@ -61,10 +61,12 @@ const Services = () => {
                 </ServicesCard>
             </ServicesWrapper>
             <ServicesBtnWrapper>
-                <Button1 to='/signin' onMouseEnter={onHover} onMouseLeave={onHover}>
+                <Button to='get-started-slider' onMouseEnter={onHover} onMouseLeave={onHover} smooth={true}
+                                    duration={500}
+                                    spy={true}>
                     Попробовать {hover ? <ArrowForward /> : <ArrowRight
                     />}
-                </Button1>
+                </Button>
                
             </ServicesBtnWrapper>
 
