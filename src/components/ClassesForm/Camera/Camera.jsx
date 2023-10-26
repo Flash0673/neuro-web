@@ -6,7 +6,7 @@ import Webcam from 'react-webcam';
 import './Camera.css';
 import Dropdown from 'react-multilevel-dropdown';
 
-const CameraForm = () => {
+const CameraForm = ({formId, delForm}) => {
   const webcamRef = useRef(null);
   const [capturedPhotos, setCapturedPhotos] = useState([]);
   const [captureInterval, setCaptureInterval] = useState(null);
@@ -51,7 +51,7 @@ const CameraForm = () => {
         <Dropdown
           title=<MoreVertIcon/>
           className="more-btn">
-              <Dropdown.Item  onClick={() => setShowCamera(!showCamera)} >
+              <Dropdown.Item  onClick={() => delForm(formId)} >
                 Удалить класс
               </Dropdown.Item>
         </Dropdown>
@@ -59,10 +59,13 @@ const CameraForm = () => {
       </div>
     )
   }
-    
+
   return (
     <React.Fragment>
       <div className="card">
+        <div className="class-text">
+          Класс {formId}
+        </div>
         <MenuBar/>
         <div class="horizontal-line"></div>
         <button className='icon-btn' onClick={() => setShowCamera(!showCamera)}>
